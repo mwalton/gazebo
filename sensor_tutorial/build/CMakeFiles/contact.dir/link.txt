@@ -1,0 +1,1 @@
+/usr/bin/c++   -dynamiclib -Wl,-headerpad_max_install_names   -o libcontact.dylib -install_name /Users/michaelwalton/workspace/gazebo/sensor_tutorial/build/libcontact.dylib CMakeFiles/contact.dir/ContactPlugin.cc.o  -L/usr/local/Cellar/gazebo4/4.0.0/lib  -L/usr/local/Cellar/gazebo4/4.0.0/lib/gazebo-4.0/plugins 

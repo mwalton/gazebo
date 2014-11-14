@@ -1,0 +1,21 @@
+<?xml version="1.0"?> 
+<sdf version="1.4">
+  <world name="default">
+
+    <!-- Ground Plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <include>
+        <uri>model://em_bot</uri>
+        <plugin name="model_push" filename="build/libmodel_push.dylib"/>
+        <plugin name="contactSense" filename="build/libcontact.dylib"/>
+    </include>
+
+  </world>
+</sdf>
