@@ -1,0 +1,215 @@
+<?xml version='1.0'?>
+<sdf version='1.5'>
+    <model name='colorPlumes'>
+        <static>true</static>
+        <link name='red_plume'>
+            <pose>1 0 0 0 -0 0</pose>
+            <visual name='visual'>
+                <transparency>0.75</transparency>
+                <geometry>
+                    <sphere>
+                        <radius>1.0</radius>
+                    </sphere>
+                </geometry>
+                <material>
+                    <script>
+                        <uri>file://media/materials/scripts/gazebo.material</uri>
+                        <name>Gazebo/Red</name>
+                    </script>
+                </material>
+            </visual>
+        </link>
+        <link name='green_plume'>
+            <pose>2.25 0 0 0 -0 0</pose>
+            <visual name='visual'>
+                <transparency>0.75</transparency>
+                <geometry>
+                    <sphere>
+                        <radius>1.0</radius>
+                    </sphere>
+                </geometry>
+                <material>
+                    <script>
+                        <uri>file://media/materials/scripts/gazebo.material</uri>
+                        <name>Gazebo/Green</name>
+                    </script>
+                </material>
+            </visual>
+        </link>
+        <link name='blue_plume'>
+            <pose>3.5 0 0 0 -0 0</pose>
+            <visual name='visual'>
+                <transparency>0.75</transparency>
+                <geometry>
+                    <sphere>
+                        <radius>1.0</radius>
+                    </sphere>
+                </geometry>
+                <material>
+                    <script>
+                        <uri>file://media/materials/scripts/gazebo.material</uri>
+                        <name>Gazebo/Blue</name>
+                    </script>
+                </material>
+            </visual>
+        </link>
+        <link name='yellow_plume'>
+            <pose>4.75 0 0 0 -0 0</pose>
+            <visual name='visual'>
+                <transparency>0.75</transparency>
+                <geometry>
+                    <sphere>
+                        <radius>1.0</radius>
+                    </sphere>
+                </geometry>
+                <material>
+                    <script>
+                        <uri>file://media/materials/scripts/gazebo.material</uri>
+                        <name>Gazebo/Yellow</name>
+                    </script>
+                </material>
+            </visual>
+        </link>
+
+        <!-- inner spheres -->
+
+        <link name='red_gradient'>
+            <pose>1 0 0 0 -0 0</pose>
+            <visual name='visual'>
+                <transparency>0.75</transparency>
+                <geometry>
+                    <sphere>
+                        <radius>0.9</radius>
+                    </sphere>
+                </geometry>
+                <material>
+                    <script>
+                        <uri>file://media/materials/scripts/gazebo.material</uri>
+                        <name>Gazebo/Red</name>
+                    </script>
+                </material>
+            </visual>
+        </link>
+        <link name='green_gradient'>
+            <pose>2.25 0 0 0 -0 0</pose>
+            <visual name='visual'>
+                <transparency>0.75</transparency>
+                <geometry>
+                    <sphere>
+                        <radius>0.9</radius>
+                    </sphere>
+                </geometry>
+                <material>
+                    <script>
+                        <uri>file://media/materials/scripts/gazebo.material</uri>
+                        <name>Gazebo/Green</name>
+                    </script>
+                </material>
+            </visual>
+        </link>
+        <link name='blue_gradient'>
+            <pose>3.5 0 0 0 -0 0</pose>
+            <visual name='visual'>
+                <transparency>0.75</transparency>
+                <geometry>
+                    <sphere>
+                        <radius>0.9</radius>
+                    </sphere>
+                </geometry>
+                <material>
+                    <script>
+                        <uri>file://media/materials/scripts/gazebo.material</uri>
+                        <name>Gazebo/Blue</name>
+                    </script>
+                </material>
+            </visual>
+        </link>
+        <link name='yellow_gradient'>
+            <pose>4.75 0 0 0 -0 0</pose>
+            <visual name='visual'>
+                <transparency>0.75</transparency>
+                <geometry>
+                    <sphere>
+                        <radius>0.9</radius>
+                    </sphere>
+                </geometry>
+                <material>
+                    <script>
+                        <uri>file://media/materials/scripts/gazebo.material</uri>
+                        <name>Gazebo/Yellow</name>
+                    </script>
+                </material>
+            </visual>
+        </link>
+        <!-- odorant sources -->
+
+        <link name='red_source'>
+            <pose>1 0 0 0 -0 0</pose>
+            <visual name='visual'>
+                <transparency>0.85</transparency>
+                <geometry>
+                    <sphere>
+                        <radius>0.75</radius>
+                    </sphere>
+                </geometry>
+                <material>
+                    <script>
+                        <uri>file://media/materials/scripts/gazebo.material</uri>
+                        <name>Gazebo/Red</name>
+                    </script>
+                </material>
+            </visual>
+        </link>
+        <link name='green_source'>
+            <pose>2.25 0 0 0 -0 0</pose>
+            <visual name='visual'>
+                <transparency>0.85</transparency>
+                <geometry>
+                    <sphere>
+                        <radius>0.75</radius>
+                    </sphere>
+                </geometry>
+                <material>
+                    <script>
+                        <uri>file://media/materials/scripts/gazebo.material</uri>
+                        <name>Gazebo/Green</name>
+                    </script>
+                </material>
+            </visual>
+        </link>
+        <link name='blue_source'>
+            <pose>3.5 0 0 0 -0 0</pose>
+            <visual name='visual'>
+                <transparency>0.85</transparency>
+                <geometry>
+                    <sphere>
+                        <radius>0.75</radius>
+                    </sphere>
+                </geometry>
+                <material>
+                    <script>
+                        <uri>file://media/materials/scripts/gazebo.material</uri>
+                        <name>Gazebo/Blue</name>
+                    </script>
+                </material>
+            </visual>
+        </link>
+        <link name='yellow_source'>
+            <pose>4.75 0 0 0 -0 0</pose>
+            <visual name='visual'>
+                <transparency>0.85</transparency>
+                <geometry>
+                    <sphere>
+                        <radius>0.75</radius>
+                    </sphere>
+                </geometry>
+                <material>
+                    <script>
+                        <uri>file://media/materials/scripts/gazebo.material</uri>
+                        <name>Gazebo/Yellow</name>
+                    </script>
+                </material>
+            </visual>
+        </link>
+    </model>
+</sdf>

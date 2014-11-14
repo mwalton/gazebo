@@ -1,1 +1,3 @@
+/Users/michaelwalton/workspace/gazebo/plume_world/build/CMakeFiles/avoid_walls.dir
 /Users/michaelwalton/workspace/gazebo/plume_world/build/CMakeFiles/model_push.dir
+/Users/michaelwalton/workspace/gazebo/plume_world/build/CMakeFiles/move_foreward.dir

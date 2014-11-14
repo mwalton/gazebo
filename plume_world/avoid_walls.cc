@@ -7,7 +7,7 @@
 
 namespace gazebo
 {
-    class ModelPush : public ModelPlugin
+    class AvoidWalls : public ModelPlugin
     {
         public: void Load(physics::ModelPtr _parent, sdf::ElementPtr _sdf)
                 {
@@ -19,7 +19,7 @@ namespace gazebo
                     if (this->LoadParams(this->model->GetSDF()))
                     {
                         this->updateConnection = event::Events::ConnectWorldUpdateBegin(
-                                boost::bind(&ModelPush::OnUpdate, this, _1));
+                                boost::bind(&AvoidWalls::OnUpdate, this, _1));
                     }
 
                 }
@@ -61,13 +61,13 @@ namespace gazebo
                             min_dist = this->laser->GetRange(i);
                     }
 
-                    double target_dist = 2.0;
+                    double turn_proximity = 2.0;
 
                     // apply force to the wheels
                     //
                     if (min_dist < this->laser->GetRangeMax())
                     {
-                        double torque = 5.0 * (min_dist - target_dist);
+                        double torque = 5.0 * (min_dist - turn_proximity);
                         this->leftWheel->SetForce(0, torque);
                         this->rightWheel->SetForce(0, torque);
                     }
@@ -85,5 +85,5 @@ namespace gazebo
     };
 
     // Register this plugin with the simulator
-    GZ_REGISTER_MODEL_PLUGIN(ModelPush)
+    GZ_REGISTER_MODEL_PLUGIN(AvoidWalls)
 }

@@ -56,13 +56,48 @@ CMAKE_SOURCE_DIR = /Users/michaelwalton/workspace/gazebo/plume_world
 CMAKE_BINARY_DIR = /Users/michaelwalton/workspace/gazebo/plume_world/build
 
 #=============================================================================
+# Target rules for target CMakeFiles/avoid_walls.dir
+
+# All Build rule for target.
+CMakeFiles/avoid_walls.dir/all:
+	$(MAKE) -f CMakeFiles/avoid_walls.dir/build.make CMakeFiles/avoid_walls.dir/depend
+	$(MAKE) -f CMakeFiles/avoid_walls.dir/build.make CMakeFiles/avoid_walls.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/michaelwalton/workspace/gazebo/plume_world/build/CMakeFiles  1
+	@echo "Built target avoid_walls"
+.PHONY : CMakeFiles/avoid_walls.dir/all
+
+# Include target in all.
+all: CMakeFiles/avoid_walls.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/avoid_walls.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michaelwalton/workspace/gazebo/plume_world/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/avoid_walls.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michaelwalton/workspace/gazebo/plume_world/build/CMakeFiles 0
+.PHONY : CMakeFiles/avoid_walls.dir/rule
+
+# Convenience name for target.
+avoid_walls: CMakeFiles/avoid_walls.dir/rule
+.PHONY : avoid_walls
+
+# clean rule for target.
+CMakeFiles/avoid_walls.dir/clean:
+	$(MAKE) -f CMakeFiles/avoid_walls.dir/build.make CMakeFiles/avoid_walls.dir/clean
+.PHONY : CMakeFiles/avoid_walls.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/avoid_walls.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/model_push.dir
 
 # All Build rule for target.
 CMakeFiles/model_push.dir/all:
 	$(MAKE) -f CMakeFiles/model_push.dir/build.make CMakeFiles/model_push.dir/depend
 	$(MAKE) -f CMakeFiles/model_push.dir/build.make CMakeFiles/model_push.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/michaelwalton/workspace/gazebo/plume_world/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/michaelwalton/workspace/gazebo/plume_world/build/CMakeFiles  2
 	@echo "Built target model_push"
 .PHONY : CMakeFiles/model_push.dir/all
 
@@ -88,6 +123,41 @@ CMakeFiles/model_push.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/model_push.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/move_foreward.dir
+
+# All Build rule for target.
+CMakeFiles/move_foreward.dir/all:
+	$(MAKE) -f CMakeFiles/move_foreward.dir/build.make CMakeFiles/move_foreward.dir/depend
+	$(MAKE) -f CMakeFiles/move_foreward.dir/build.make CMakeFiles/move_foreward.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/michaelwalton/workspace/gazebo/plume_world/build/CMakeFiles  3
+	@echo "Built target move_foreward"
+.PHONY : CMakeFiles/move_foreward.dir/all
+
+# Include target in all.
+all: CMakeFiles/move_foreward.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/move_foreward.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michaelwalton/workspace/gazebo/plume_world/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/move_foreward.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michaelwalton/workspace/gazebo/plume_world/build/CMakeFiles 0
+.PHONY : CMakeFiles/move_foreward.dir/rule
+
+# Convenience name for target.
+move_foreward: CMakeFiles/move_foreward.dir/rule
+.PHONY : move_foreward
+
+# clean rule for target.
+CMakeFiles/move_foreward.dir/clean:
+	$(MAKE) -f CMakeFiles/move_foreward.dir/build.make CMakeFiles/move_foreward.dir/clean
+.PHONY : CMakeFiles/move_foreward.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/move_foreward.dir/clean
 .PHONY : clean
 
 #=============================================================================

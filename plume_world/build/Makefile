@@ -102,6 +102,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named avoid_walls
+
+# Build rule for target.
+avoid_walls: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 avoid_walls
+.PHONY : avoid_walls
+
+# fast build rule for target.
+avoid_walls/fast:
+	$(MAKE) -f CMakeFiles/avoid_walls.dir/build.make CMakeFiles/avoid_walls.dir/build
+.PHONY : avoid_walls/fast
+
+#=============================================================================
 # Target rules for targets named model_push
 
 # Build rule for target.
@@ -113,6 +126,43 @@ model_push: cmake_check_build_system
 model_push/fast:
 	$(MAKE) -f CMakeFiles/model_push.dir/build.make CMakeFiles/model_push.dir/build
 .PHONY : model_push/fast
+
+#=============================================================================
+# Target rules for targets named move_foreward
+
+# Build rule for target.
+move_foreward: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 move_foreward
+.PHONY : move_foreward
+
+# fast build rule for target.
+move_foreward/fast:
+	$(MAKE) -f CMakeFiles/move_foreward.dir/build.make CMakeFiles/move_foreward.dir/build
+.PHONY : move_foreward/fast
+
+avoid_walls.o: avoid_walls.cc.o
+.PHONY : avoid_walls.o
+
+# target to build an object file
+avoid_walls.cc.o:
+	$(MAKE) -f CMakeFiles/avoid_walls.dir/build.make CMakeFiles/avoid_walls.dir/avoid_walls.cc.o
+.PHONY : avoid_walls.cc.o
+
+avoid_walls.i: avoid_walls.cc.i
+.PHONY : avoid_walls.i
+
+# target to preprocess a source file
+avoid_walls.cc.i:
+	$(MAKE) -f CMakeFiles/avoid_walls.dir/build.make CMakeFiles/avoid_walls.dir/avoid_walls.cc.i
+.PHONY : avoid_walls.cc.i
+
+avoid_walls.s: avoid_walls.cc.s
+.PHONY : avoid_walls.s
+
+# target to generate assembly for a file
+avoid_walls.cc.s:
+	$(MAKE) -f CMakeFiles/avoid_walls.dir/build.make CMakeFiles/avoid_walls.dir/avoid_walls.cc.s
+.PHONY : avoid_walls.cc.s
 
 model_push.o: model_push.cc.o
 .PHONY : model_push.o
@@ -138,18 +188,50 @@ model_push.cc.s:
 	$(MAKE) -f CMakeFiles/model_push.dir/build.make CMakeFiles/model_push.dir/model_push.cc.s
 .PHONY : model_push.cc.s
 
+move_foreward.o: move_foreward.cc.o
+.PHONY : move_foreward.o
+
+# target to build an object file
+move_foreward.cc.o:
+	$(MAKE) -f CMakeFiles/move_foreward.dir/build.make CMakeFiles/move_foreward.dir/move_foreward.cc.o
+.PHONY : move_foreward.cc.o
+
+move_foreward.i: move_foreward.cc.i
+.PHONY : move_foreward.i
+
+# target to preprocess a source file
+move_foreward.cc.i:
+	$(MAKE) -f CMakeFiles/move_foreward.dir/build.make CMakeFiles/move_foreward.dir/move_foreward.cc.i
+.PHONY : move_foreward.cc.i
+
+move_foreward.s: move_foreward.cc.s
+.PHONY : move_foreward.s
+
+# target to generate assembly for a file
+move_foreward.cc.s:
+	$(MAKE) -f CMakeFiles/move_foreward.dir/build.make CMakeFiles/move_foreward.dir/move_foreward.cc.s
+.PHONY : move_foreward.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... avoid_walls"
 	@echo "... edit_cache"
 	@echo "... model_push"
+	@echo "... move_foreward"
 	@echo "... rebuild_cache"
+	@echo "... avoid_walls.o"
+	@echo "... avoid_walls.i"
+	@echo "... avoid_walls.s"
 	@echo "... model_push.o"
 	@echo "... model_push.i"
 	@echo "... model_push.s"
+	@echo "... move_foreward.o"
+	@echo "... move_foreward.i"
+	@echo "... move_foreward.s"
 .PHONY : help
 
 

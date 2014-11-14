@@ -2,6 +2,13 @@
 <sdf version="1.4">
     <world name="default">
 
+        <gui fullscreen='0'>
+            <camera name='user_camera'>
+                <pose>3.68422 -6.23958 10.2859 0 1.0193 1.54621</pose>
+                <view_controller>orbit</view_controller>
+            </camera>
+        </gui>
+
         <!-- Ground Plane -->
         <include>
             <uri>model://ground_plane</uri>
@@ -13,32 +20,16 @@
 
         <include>
             <uri>model://em_bot</uri>
-            <plugin name="model_push" filename="build/libmodel_push.dylib">
-                <ray_sensor>em_bot::laser</ray_sensor>
-            </plugin>
+            <plugin filename="build/libmove_foreward.so" name="move_foreward"/>
         </include>
 
-        <model name="box">
-            <static>true</static>
-            <pose>2 0 0 0 0 0</pose>
-            <link name="link">
-                <collision name="collision">
-                    <geometry>
-                        <box>
-                            <size>0.2 1 1</size>
-                        </box>
-                    </geometry>
-                </collision>
+        <include>
+            <uri>plumeWorldEnv</uri>
+            <pose>2.3 0.5 0 0 0 0</pose>
+        </include>
 
-                <visual name="visual">
-                    <geometry>
-                        <box>
-                            <size>0.2 1 1</size>
-                        </box>
-                    </geometry>
-                </visual>
-            </link>
-        </model> 
-
+        <include>
+            <uri>colorPlumes</uri>
+        </include>
     </world>
 </sdf>

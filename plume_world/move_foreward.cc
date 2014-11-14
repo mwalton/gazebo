@@ -7,7 +7,7 @@
 
 namespace gazebo
 {
-    class ModelPush : public ModelPlugin
+    class MoveForeward : public ModelPlugin
     {
         public: void Load(physics::ModelPtr _parent, sdf::ElementPtr _sdf)
                 {
@@ -19,7 +19,7 @@ namespace gazebo
                     if (this->LoadParams(this->model->GetSDF()))
                     {
                         this->updateConnection = event::Events::ConnectWorldUpdateBegin(
-                                boost::bind(&ModelPush::OnUpdate, this, _1));
+                                boost::bind(&MoveForeward::OnUpdate, this, _1));
                     }
 
                 }
@@ -51,26 +51,10 @@ namespace gazebo
                 // Called by the world update start event
         public: void OnUpdate(const common::UpdateInfo & /*_info*/)
                 {
-                    unsigned int nRays = this->laser->GetRangeCount();
-                    double min_dist = 1e6;
-
-
-                    for (unsigned int i = 0; i < nRays; ++i)
-                    {
-                        if (this->laser->GetRange(i) < min_dist)
-                            min_dist = this->laser->GetRange(i);
-                    }
-
-                    double target_dist = 2.0;
-
                     // apply force to the wheels
                     //
-                    if (min_dist < this->laser->GetRangeMax())
-                    {
-                        double torque = 5.0 * (min_dist - target_dist);
-                        this->leftWheel->SetForce(0, torque);
-                        this->rightWheel->SetForce(0, torque);
-                    }
+                        this->leftWheel->SetForce(0, 0.1);
+                        this->rightWheel->SetForce(0, 0.1);
                 }
 
                 // Pointer to the model
@@ -85,5 +69,5 @@ namespace gazebo
     };
 
     // Register this plugin with the simulator
-    GZ_REGISTER_MODEL_PLUGIN(ModelPush)
+    GZ_REGISTER_MODEL_PLUGIN(MoveForeward)
 }

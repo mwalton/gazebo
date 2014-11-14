@@ -209,7 +209,13 @@ Project_BINARY_DIR:STATIC=/Users/michaelwalton/workspace/gazebo/plume_world/buil
 Project_SOURCE_DIR:STATIC=/Users/michaelwalton/workspace/gazebo/plume_world
 
 //Dependencies for the target
+avoid_walls_LIB_DEPENDS:STATIC=general;gazebo_transport;general;gazebo_physics;general;gazebo_sensors;general;gazebo_rendering;general;gazebo_gui;general;/usr/local/Cellar/sdformat/2.1.0/lib/libsdformat.dylib;general;gazebo_msgs;general;gazebo_math;general;gazebo_common;general;gazebo;general;/usr/local/lib/libboost_system-mt.dylib;
+
+//Dependencies for the target
 model_push_LIB_DEPENDS:STATIC=general;gazebo_transport;general;gazebo_physics;general;gazebo_sensors;general;gazebo_rendering;general;gazebo_gui;general;/usr/local/Cellar/sdformat/2.1.0/lib/libsdformat.dylib;general;gazebo_msgs;general;gazebo_math;general;gazebo_common;general;gazebo;general;/usr/local/lib/libboost_system-mt.dylib;
+
+//Dependencies for the target
+move_foreward_LIB_DEPENDS:STATIC=general;gazebo_transport;general;gazebo_physics;general;gazebo_sensors;general;gazebo_rendering;general;gazebo_gui;general;/usr/local/Cellar/sdformat/2.1.0/lib/libsdformat.dylib;general;gazebo_msgs;general;gazebo_math;general;gazebo_common;general;gazebo;general;/usr/local/lib/libboost_system-mt.dylib;
 
 
 ########################
