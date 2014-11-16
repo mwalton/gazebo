@@ -31,5 +31,10 @@
         <include>
             <uri>colorPlumes</uri>
         </include>
+        
+	<include>
+                <pose>3.68422 -6.23958 10.2859 0 1.0193 1.54621</pose>
+            <uri>static_cam</uri>
+        </include>
     </world>
 </sdf>

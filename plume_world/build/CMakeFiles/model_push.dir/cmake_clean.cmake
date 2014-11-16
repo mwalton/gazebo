@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/model_push.dir/model_push.cc.o"
   "libmodel_push.pdb"
-  "libmodel_push.dylib"
+  "libmodel_push.so"
 )
 
 # Per-language clean rules from dependency scanning.

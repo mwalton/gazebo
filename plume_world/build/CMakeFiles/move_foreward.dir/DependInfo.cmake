@@ -4,9 +4,9 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/michaelwalton/workspace/gazebo/plume_world/move_foreward.cc" "/Users/michaelwalton/workspace/gazebo/plume_world/build/CMakeFiles/move_foreward.dir/move_foreward.cc.o"
+  "/home/myke/workspace/gazebo/plume_world/move_foreward.cc" "/home/myke/workspace/gazebo/plume_world/build/CMakeFiles/move_foreward.dir/move_foreward.cc.o"
   )
-SET(CMAKE_CXX_COMPILER_ID "Clang")
+SET(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
@@ -14,9 +14,8 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
-  "/usr/local/include"
-  "/usr/local/Cellar/gazebo4/4.0.0/include/gazebo-4.0"
-  "/usr/local/Cellar/sdformat/2.1.0/include/sdformat-2.1"
+  "/usr/include/gazebo-2.2"
+  "/usr/include/sdformat-1.4"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

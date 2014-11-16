@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/move_foreward.dir/move_foreward.cc.o"
   "libmove_foreward.pdb"
-  "libmove_foreward.dylib"
+  "libmove_foreward.so"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/avoid_walls.dir/avoid_walls.cc.o"
   "libavoid_walls.pdb"
-  "libavoid_walls.dylib"
+  "libavoid_walls.so"
 )
 
 # Per-language clean rules from dependency scanning.
