@@ -19,7 +19,7 @@
         </include>
 
         <include>
-            <uri>model://em_bot</uri>
+            <uri>em_bot</uri>
             <plugin filename="build/libmove_foreward.so" name="move_foreward"/>
         </include>
 
